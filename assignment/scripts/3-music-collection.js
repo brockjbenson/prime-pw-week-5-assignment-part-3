@@ -1,5 +1,5 @@
 console.log('***** Music Collection *****')
-let Collection = [];
+let collection = [];
 // Created empty array named collection
 function addToCollection ( title, artist, yearPublished ) {
 
@@ -12,4 +12,10 @@ const myObject = {
     'yearPublished': '',
 }
 // Added new object
+
+collection.push(myObject);
+// Added myObject to end of collection
+
+console.log(myObject);
+// Log new myObject
 
