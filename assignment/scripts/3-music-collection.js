@@ -21,3 +21,11 @@ console.log(addToCollection('Sin', 'Baller', 2022));
 
 console.log(collection);
 //Logged new collection array
+
+function showCollection( array ) {
+    console.log(array);
+    for (let i = 0; i < array.length; i++) {
+       
+    } 
+}
+ console.log(showCollection(collection));
