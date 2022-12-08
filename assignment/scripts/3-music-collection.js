@@ -1,21 +1,23 @@
-console.log('***** Music Collection *****')
 let collection = [];
 // Created empty array named collection
 function addToCollection ( title, artist, yearPublished ) {
-
+    const album = {
+        'title': title,
+        'artist': artist,
+        'yearPublished': yearPublished,
+    } ; 
+    collection.push(album); {
+    }
+    return album;
 }
-//Adding funciton called addToCollection with three given parameters 
+// Function created
+console.log(addToCollection('Take Me', 'Johnson', 2016));
+console.log(addToCollection('Get Back', 'Bradly', 2010));
+console.log(addToCollection('Hello', 'Crime', 1998));
+console.log(addToCollection('Scammer', 'Crank', 2005));
+console.log(addToCollection('Rough House', 'Sincere', 2009));
+console.log(addToCollection('Sin', 'Baller', 2022));
+// Added and logged 6 albums
 
-const myObject = {
-    'title': '',
-    'artist': '',
-    'yearPublished': '',
-}
-// Added new object
-
-collection.push(myObject);
-// Added myObject to end of collection
-
-console.log(myObject);
-// Log new myObject
-
+console.log(collection);
+//Logged new collection array
