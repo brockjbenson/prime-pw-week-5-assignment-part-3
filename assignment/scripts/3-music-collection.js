@@ -1,6 +1,7 @@
 let collection = [];
 // Created empty array named collection
 function addToCollection ( title, artist, yearPublished ) {
+    console.log('Adding:');
     let album = {
         'title': title,
         'artist': artist,
@@ -23,11 +24,11 @@ console.log(collection);
 //Logged new collection array
 
 function showCollection( array ) {
-    console.log(array);
+    console.log('Testing showCollection function:');
     for (let i = 0; i < array.length; i++) {
         let album = array[i];
-        console.log('TITLE', album.title, 'ARTIST', album.artist, 'published in', album.yearPublished );
-        // Logging the collection in TITLE, ARTIST, published in: format by adding string along with the given object
+        console.log(album.title, 'by', album.artist + ', published in', album.yearPublished);
+        // Logging the collection in TITLE by ARTIST, published in: format by adding string along with the given object
 }
 }
  console.log(showCollection(collection));
@@ -35,7 +36,7 @@ function showCollection( array ) {
  // Testing show collection function
 
  function findByArtist( artists ) {
-    console.log( 'In byArtist:', artists);
+    console.log( 'Testing byArtist:', artists);
     const arr = [];
     for (let i = 0; i < collection.length; i++) {
         if (collection[i].artist === artists) {
