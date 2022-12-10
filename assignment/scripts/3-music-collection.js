@@ -10,7 +10,7 @@ function addToCollection ( title, artist, yearPublished ) {
     }
     return album;
 }
-// Function created
+// addToCollection Function created
 console.log(addToCollection('Take Me', 'Johnson', 2016));
 console.log(addToCollection('Get Back', 'Bradly', 2010));
 console.log(addToCollection('Hello', 'Crime', 1998));
